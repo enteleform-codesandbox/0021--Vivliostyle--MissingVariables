@@ -1,0 +1,15 @@
+{
+
+	"name":    "vivliostyle-missing-variables-issue",
+	"version": "1.0.0",
+
+	"scripts": {
+		"build":   "vivliostyle build",
+		"preview": "vivliostyle preview"
+	},
+
+	"devDependencies": {
+		"@vivliostyle/cli": "5.8.0"
+	}
+
+}

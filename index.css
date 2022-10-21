@@ -1,0 +1,14 @@
+
+.Text{
+	/** Build fails when variable is used in `calc`. **/
+	margin: calc(var(--Undefined) / 2);
+
+	/** Build fails just from presence of variable in `calc`. **/
+	/*margin: calc(var(--Undefined));*/
+
+	/** Build succeeds when variable is used directly. **/
+	/*margin: var(--Undefined);*/
+
+	/** Build succeeds when variable is used in certain properties. **/
+	/*width: calc(var(--Undefined) / 2);*/
+}
